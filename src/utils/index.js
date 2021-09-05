@@ -1,3 +1,3 @@
-import * as AppUtils from './appUtils';
+import * as Utils from './utilFuncs';
 
-export {AppUtils};
+export default Utils;

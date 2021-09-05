@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 import {connect} from 'react-redux';
 import {saveUserInfo} from '../../services/auth/action';
+import Translate from 'magenta-translate';
+
+const {translate} = Translate;
+
 import styles from './styles';
 
 class SignIn extends Component {
@@ -19,7 +23,11 @@ class SignIn extends Component {
     const {user} = this.props;
     return (
       <View style={styles.container}>
-        {!!user && <Text style={styles.text}> {user.name} </Text>}
+        {!!user && (
+          <Text style={styles.text}>
+            {translate('hello')} {user.name}
+          </Text>
+        )}
       </View>
     );
   }

@@ -1,7 +1,7 @@
 import {PixelRatio} from 'react-native';
-import {AppUtils} from 'magenta-utils';
+import Utils from 'magenta-utils';
 
-const {isIOS, screenWidth, screenHeight} = AppUtils;
+const {isIOS, screenWidth, screenHeight} = Utils;
 
 const baseWidth = 375;
 const baseHeight = 667;
